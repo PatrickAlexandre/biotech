@@ -43,8 +43,8 @@
     <a href="mailto:patou.dev@yopmail.fr?subject=Bug Report/Message/Assistance Request&body=Please describe your issue or request here." class="fixed bottom-4 right-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-indigo-700 transition duration-300 text-sm sm:text-base z-50">
         <i class="fas fa-envelope mr-2"></i> Reporter un bug
     </a>
-    <!-- MAIN -->
-    <div class="bg-white bg-opacity-20 backdrop-blur-lg p-4 sm:p-8 rounded-3xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+    <!-- NAV -->
+    <nav class="bg-white bg-opacity-20 backdrop-blur-lg p-4 sm:p-8 rounded-3xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         <!-- Favoris 💻☁️ -->
         <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300" onclick="window.location.href='./signets/Bookmarks.html'">
             <div class="icon-container">
@@ -52,6 +52,13 @@
                 <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Favoris</span>
             </div>
         </div>
+        <!-- Livres 📚📖 -->
+        <a href="https://books.google.fr/books?uid=109463742268000114572&as_coll=0" target="_blank" class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-book fa-3x sm:fa-4x text-teal-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Livres</span>
+            </div>
+        </a>   
         <!-- Employés AI 💼🤖 -->
         <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
             <div class="icon-container">
@@ -95,14 +102,7 @@
                 <i class="fas fa-bullhorn fa-3x sm:fa-4x text-indigo-600"></i>
                 <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Marketing et vente</span>
             </div>
-        </div>
-        <!-- Livres 📚📖 -->
-        <a href="https://books.google.fr/books?uid=109463742268000114572&as_coll=0" target="_blank" class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
-            <div class="icon-container">
-                <i class="fas fa-book fa-3x sm:fa-4x text-teal-600"></i>
-                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Livres</span>
-            </div>
-        </a>        
+        </div>     
         <!-- Alimentation 🍽️🍎 -->
         <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
             <div class="icon-container">
@@ -152,7 +152,7 @@
                 <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Commerce</span>
             </div>
         </div>
-    </div>
-    <!-- MAIN -->
+    </nav>
+    <!-- NAV -->
 </body>
 </html>
