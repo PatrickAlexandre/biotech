@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Bibliothèques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .icon-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center min-h-screen">
+    <!-- Button at the bottom right -->
+    <a href="mailto:patou.dev@yopmail.fr?subject=Bug Report/Message/Assistance Request&body=Please describe your issue or request here." class="fixed bottom-4 right-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-indigo-700 transition duration-300 text-sm sm:text-base z-50">
+        <i class="fas fa-envelope mr-2"></i> Reporter un bug
+    </a>
+    <!-- MAIN -->
+    <div class="bg-white bg-opacity-20 backdrop-blur-lg p-4 sm:p-8 rounded-3xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <!-- Favoris 💻☁️ -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300" onclick="window.location.href='./signets/Bookmarks.html'">
+            <div class="icon-container">
+                <i class="fas fa-star fa-3x sm:fa-4x text-pink-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Favoris</span>
+            </div>
+        </div>
+        <!-- Employés AI 💼🤖 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-robot fa-3x sm:fa-4x text-blue-700"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Employés AI</span>
+            </div>
+            <div class="badge">99€</div>
+        </div>
+        <!-- Business Growth Guide 📈📚 -->
+        <a href="https://chatgpt.com/g/g-YY3qeRoAS-business-growth-guide" class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-chart-line fa-3x sm:fa-4x text-green-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Business Growth Guide</span>
+            </div>
+            <div class="badge">18€</div>
+        </a>
+        <!-- Création d'Entreprise (5 étapes) 🏢🛠️ -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300" onclick="window.open('./entreprise/dashboard.html', '_blank')">
+            <div class="icon-container">
+                <i class="fas fa-building fa-3x sm:fa-4x text-yellow-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Création d'Entreprise (5 étapes)</span>
+            </div>
+        </div>
+        <!-- Festival 🎉🎵 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300" onclick="window.open('./festival/PT/Seixas-Do-Douro.html', '_blank')">
+            <div class="icon-container">
+                <i class="fas fa-music fa-3x sm:fa-4x text-purple-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Festival</span>
+            </div>
+        </div>
+        <!-- Améliorer sa productivité 📊🚀 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-rocket fa-3x sm:fa-4x text-red-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Améliorer sa productivité</span>
+            </div>
+        </div>
+        <!-- Marketing et vente 💼📢 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-bullhorn fa-3x sm:fa-4x text-indigo-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Marketing et vente</span>
+            </div>
+        </div>
+        <!-- Livres 📚📖 -->
+        <a href="https://books.google.fr/books?uid=109463742268000114572&as_coll=0" target="_blank" class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-book fa-3x sm:fa-4x text-teal-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Livres</span>
+            </div>
+        </a>        
+        <!-- Alimentation 🍽️🍎 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-utensils fa-3x sm:fa-4x text-orange-600"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Alimentation</span>
+            </div>
+        </div>
+        <!-- Santé 🏥❤️ -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-heartbeat fa-3x sm:fa-4x text-red-500"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Santé</span>
+            </div>
+        </div>
+        <!-- Finances 💰📊 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-coins fa-3x sm:fa-4x text-yellow-500"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Finances</span>
+            </div>
+        </div>
+        <!-- Réflexion -->
+        <a href="./reflexion/Reflexion.html" target="_blank" class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-brain fa-3x sm:fa-4x text-purple-700"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Réflexion</span>
+            </div>
+        </a>
+        <!-- Regrets 😢⏳ -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-sad-tear fa-3x sm:fa-4x text-blue-500"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Regrets</span>
+            </div>
+        </div>
+        <!-- Production alimentaire 🌾🏭 -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-seedling fa-3x sm:fa-4x text-green-500"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Production alimentaire</span>
+            </div>
+        </div>
+        <!-- Commerce -->
+        <div class="card flex flex-col items-center relative p-4 bg-white bg-opacity-40 rounded-2xl transition duration-300">
+            <div class="icon-container">
+                <i class="fas fa-store fa-3x sm:fa-4x text-pink-700"></i>
+                <span class="mt-4 text-sm sm:text-lg font-bold text-gray-800">Commerce</span>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN -->
+</body>
+</html>
