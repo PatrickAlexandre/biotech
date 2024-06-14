@@ -22,40 +22,143 @@
     },
     {
       "title": "W3schools",
-      "description": "W3schools - Free online web tutorials.",
-      "image": "https://via.placeholder.com/50"
+      "description": "Free online web tutorials.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://spaces.w3schools.com/space/patou/editor"
     },
     {
       "title": "Dynalist",
-      "description": "Dynalist - Free outline and note-taking tool.",
-      "image": "https://via.placeholder.com/50"
+      "description": "Free outline and note-taking tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://dynalist.io/"
     },
     {
       "title": "Asana",
-      "description": "Asana - Free project management tool.",
-      "image": "https://via.placeholder.com/50"
+      "description": "Free project management tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://app.asana.com/0/1206507627554206/1206507963287345"
     },
     {
       "title": "Leroy Merlin",
-      "description": "Leroy Merlin - Free resources for DIY projects.",
+      "description": "Free resources for DIY projects.",
       "image": "https://via.placeholder.com/50"
     },
     {
       "title": "Patreon",
-      "description": "Patreon - Free platform for creators.",
-      "image": "https://via.placeholder.com/50"
-    }
-  ],
-  "trendingItems": [
+      "description": "Free platform for creators.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://www.patreon.com/apatrick"
+    },
     {
       "title": "Image Generator",
-      "description": "A PAT specialized in generating and refining images with a mix of professional...",
+      "description": "A PAT specialized in generating and refining images with a mix of professional tools.",
       "image": "https://via.placeholder.com/50"
     },
     {
       "title": "Write For Me",
-      "description": "Write tailored, engaging content with a focus on quality, relevance and precise...",
+      "description": "Write tailored, engaging content with a focus on quality, relevance and precision.",
       "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Adobe Firefly",
+      "description": "AI-driven image and graphic design tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://firefly.adobe.com/"
+    },
+    {
+      "title": "Photopea",
+      "description": "Online photo editing tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://www.photopea.com/"
+    },
+    {
+      "title": "Adobe Express",
+      "description": "Tool for removing backgrounds from images.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://new.express.adobe.com/home/tools/remove-background"
+    }
+  ],
+  "redactionItems": [
+    {
+      "title": "Résumé du Plan d'Affaires",
+      "description": "A summary of the business plan.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://whimsical.com/resume-du-plan-d-affaires-TohTzMndFQx9LJdyfjm9LB"
+    },
+    {
+      "title": "Hemingway Editor",
+      "description": "A tool for making your writing bold and clear.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://hemingwayapp.com/"
+    }
+  ],
+  "productivityItems": [
+    {
+      "title": "Asana",
+      "description": "Free project management tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://app.asana.com/0/1206507627554206/1206507963287345"
+    },
+    {
+      "title": "Trello",
+      "description": "Organize anything with anyone, anywhere.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://trello.com/"
+    }
+  ],
+  "researchItems": [
+    {
+      "title": "W3schools",
+      "description": "Free online web tutorials.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://spaces.w3schools.com/space/patou/editor"
+    },
+    {
+      "title": "Google Scholar",
+      "description": "Search scholarly articles across various disciplines.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://scholar.google.com/"
+    }
+  ],
+  "educationItems": [
+    {
+      "title": "Math Solver",
+      "description": "Your advanced math solver and AI Tutor, offers step-by-step answers.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Khan Academy",
+      "description": "Free online courses, lessons, and practice.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://www.khanacademy.org/"
+    }
+  ],
+  "lifestyleItems": [
+    {
+      "title": "Patreon",
+      "description": "Free platform for creators.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://www.patreon.com/apatrick"
+    },
+    {
+      "title": "Headspace",
+      "description": "Mindfulness and meditation app.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://www.headspace.com/"
+    }
+  ],
+  "programmingItems": [
+    {
+      "title": "Dynalist",
+      "description": "Free outline and note-taking tool.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://dynalist.io/"
+    },
+    {
+      "title": "GitHub",
+      "description": "Platform for version control and collaboration.",
+      "image": "https://via.placeholder.com/50",
+      "url": "https://github.com/"
     }
   ]
 }

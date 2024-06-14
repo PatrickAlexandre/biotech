@@ -14,12 +14,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    border-bottom: 2px solid #eee;
+    position: relative;
 }
 .header h1 {
     font-size: 24px;
     margin: 0;
+    color: #333;
 }
-.header .profile {
+.profile {
     display: flex;
     align-items: center;
 }
@@ -28,6 +31,20 @@ body {
     width: 40px;
     height: 40px;
     margin-left: 10px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger span {
+    background: #333;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
 }
 .search-bar {
     display: flex;
@@ -40,28 +57,40 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.search-bar input:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 .tabs {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #ccc;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
-.tabs div {
+.tabs .tab {
     padding: 10px 20px;
     cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 .tabs .active {
     border-bottom: 2px solid #000;
     font-weight: bold;
+    color: #000;
+}
+.tabs .tab:hover:not(.active) {
+    color: #007BFF;
 }
 .section-title {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #333;
 }
 .pat-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 .pat-item {
@@ -70,17 +99,51 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.pat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 .pat-item img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+.pat-item:hover img {
+    transform: scale(1.1);
 }
 .pat-item h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #333;
 }
 .pat-item p {
     font-size: 14px;
     color: #666;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .tabs {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .tabs .tab {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .tabs.show {
+        display: flex;
+    }
 }
