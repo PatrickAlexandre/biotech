@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PAT</h1>
+            <div class="profile">
+                <div>Mes PAT</div>
+                <button>+ Créer</button>
+                <img src="profile-picture-url" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher dans les PAT">
+        </div>
+
+        <div class="tabs">
+            <div class="tab active">Les plus populaires</div>
+            <div class="tab">Rédaction</div>
+            <div class="tab">Productivité</div>
+            <div class="tab">Recherche et analyses</div>
+            <div class="tab">Éducation</div>
+            <div class="tab">Lifestyle</div>
+            <div class="tab">Programmation</div>
+        </div>
+
+        <div class="section-title">PAT</div>
+        <div id="popular-items" class="pat-grid"></div>
+
+        <div class="section-title">Tendances</div>
+        <div id="trending-items" class="pat-grid"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "popularItems": [
+    {
+      "title": "Video PAT by VEED",
+      "description": "AI Video Maker. Generate videos for social media - YouTube, Instagram, TikTok and more! Free...",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Math Solver",
+      "description": "Your advanced math solver and AI Tutor, offers step-by-step answers, and helps you learn math and eve...",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "SQL Expert",
+      "description": "SQL expert for optimization and queries.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Framework Finder",
+      "description": "Helps locate and apply frameworks to your problem.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "W3schools",
+      "description": "W3schools - Free online web tutorials.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Dynalist",
+      "description": "Dynalist - Free outline and note-taking tool.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Asana",
+      "description": "Asana - Free project management tool.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Leroy Merlin",
+      "description": "Leroy Merlin - Free resources for DIY projects.",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Patreon",
+      "description": "Patreon - Free platform for creators.",
+      "image": "https://via.placeholder.com/50"
+    }
+  ],
+  "trendingItems": [
+    {
+      "title": "Image Generator",
+      "description": "A PAT specialized in generating and refining images with a mix of professional...",
+      "image": "https://via.placeholder.com/50"
+    },
+    {
+      "title": "Write For Me",
+      "description": "Write tailored, engaging content with a focus on quality, relevance and precise...",
+      "image": "https://via.placeholder.com/50"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+/* Réinitialiser les marges et les paddings par défaut */
+body, h1, h2, h3, p, dl, dt, dd, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Appliquer une police de caractères et un arrière-plan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Styliser le titre principal */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Styliser les titres des dossiers */
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Styliser les listes de signets */
+dl {
+    margin-left: 20px;
+}
+
+/* Styliser les éléments des signets */
+dt {
+    margin-bottom: 10px;
+}
+
+/* Styliser les liens */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056a3;
+}
+
+/* Ajouter une bordure en bas des liens */
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0066cc;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .tabs div {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tabs .active {
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .pat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .pat-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .pat-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .pat-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .pat-item p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PAT</h1>
+            <div class="profile">
+                <div>Mes PAT</div>
+                <button>+ Créer</button>
+                <img src="profile-picture-url" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher dans les PAT">
+        </div>
+
+        <div class="tabs">
+            <div class="tab active">Les plus populaires</div>
+            <div class="tab">Rédaction</div>
+            <div class="tab">Productivité</div>
+            <div class="tab">Recherche et analyses</div>
+            <div class="tab">Éducation</div>
+            <div class="tab">Lifestyle</div>
+            <div class="tab">Programmation</div>
+        </div>
+
+        <div class="section-title">PAT</div>
+        <div class="pat-grid">
+            <div class="pat-item" data-title="Video PAT by VEED" data-description="AI Video Maker. Generate videos for social media - YouTube, Instagram, TikTok and more! Free...">
+                <img src="https://via.placeholder.com/50" alt="Video PAT by VEED">
+                <h3>Video PAT by VEED</h3>
+                <p>AI Video Maker. Generate videos for social media - YouTube, Instagram, TikTok and more! Free...</p>
+            </div>
+            <div class="pat-item" data-title="Math Solver" data-description="Your advanced math solver and AI Tutor, offers step-by-step answers, and helps you learn math and eve...">
+                <img src="https://via.placeholder.com/50" alt="Math Solver">
+                <h3>Math Solver</h3>
+                <p>Your advanced math solver and AI Tutor, offers step-by-step answers, and helps you learn math and eve...</p>
+            </div>
+            <div class="pat-item" data-title="SQL Expert" data-description="SQL expert for optimization and queries.">
+                <img src="https://via.placeholder.com/50" alt="SQL Expert">
+                <h3>SQL Expert</h3>
+                <p>SQL expert for optimization and queries.</p>
+            </div>
+            <div class="pat-item" data-title="Framework Finder" data-description="Helps locate and apply frameworks to your problem.">
+                <img src="https://via.placeholder.com/50" alt="Framework Finder">
+                <h3>Framework Finder</h3>
+                <p>Helps locate and apply frameworks to your problem.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Tendances</div>
+        <div class="pat-grid">
+            <div class="pat-item" data-title="Image Generator" data-description="A PAT specialized in generating and refining images with a mix of professional...">
+                <h3>Image Generator</h3>
+                <p>A PAT specialized in generating and refining images with a mix of professional...</p>
+            </div>
+            <div class="pat-item" data-title="Write For Me" data-description="Write tailored, engaging content with a focus on quality, relevance and precise...">
+                <h3>Write For Me</h3>
+                <p>Write tailored, engaging content with a focus on quality, relevance and precise...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tabs .tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            document.querySelectorAll('.pat-item').forEach(item => {
+                const title = item.getAttribute('data-title').toLowerCase();
+                const description = item.getAttribute('data-description').toLowerCase();
+                if (title.includes(searchValue) || description.includes(searchValue)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
